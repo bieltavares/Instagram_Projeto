@@ -1,0 +1,98 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    max-height: 100vh;
+    background-color: #f3f3f3 ; 
+    display: flex;
+    /* Justify-content Alinha os elementos na horizontal de acordo com o valor definido */
+    justify-content: center;
+
+
+}
+
+.wrapper {
+    display: flex;
+    /*Align-items alinha na vertical tudo ao centro  */
+    align-items: center;
+    /* justify-content start : horizontal Start = fixa ou inicia a partir da esquerda iniciando pela parte de cima  */
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.phone {
+    /* para poder trabalhar melhor com os filhos que tem dentro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 50% do width porque vai ser 2 parte minha pagina então sendo a metade */
+    width: 50%;
+
+}
+
+.phone img{
+    height: 50rem;
+}
+
+.continue {
+    display: flex;
+    /* colunas abaixo */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content space-between ;pega oque sobra de espaço do pai ele divide entre os filhos */
+    justify-content: space-between; 
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 0.071rem solid #D3D3D3;
+}
+
+/* nth-child :  permite acessar os filhos de um elementos utilizando a posição dentro de um elemento pai */
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.profile-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 6em;
+}
+
+.login {
+    background-color: #0095f6;
+    color: #fff;
+    padding: 0.571rem;
+    border-radius: 0.286rem;
+}
+
+.logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: #A0A0A0;
+}
